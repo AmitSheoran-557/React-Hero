@@ -29,7 +29,7 @@ function Navbar() {
             {isOpen && (
                 <div className="absolute top-0 right-0 h-screen w-full bg-gray-900 text-white p-6 flex flex-col items-center justify-center shadow-lg transition-transform ease-linear duration-300 transform">
                     <button
-                        className="self-end mb-4 text-xl"
+                        className="self-end mb-4 absolute top-4 text-xl"
                         onClick={() => setIsOpen(false)}>✖
                     </button>
                     {NAVBAR_LIST.map((obj, i) => (
@@ -37,12 +37,11 @@ function Navbar() {
                             className="text-white text-base font-normal mb-4"
                             href="#"
                             key={i}
-                            onClick={() => setIsOpen(false)}
-                        >
+                            onClick={() => setIsOpen(false)}>
                             {obj.list}
                         </a>
                     ))}
-                    <div className="mt-auto">
+                    <div className="">
                         <CustomButton btnTittle={"Get Started"} />
                     </div>
                 </div>
