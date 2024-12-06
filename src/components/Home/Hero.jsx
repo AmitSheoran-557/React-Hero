@@ -12,7 +12,7 @@ const Hero = () => {
                 <div className='max-w-[1140px] mx-auto w-full text-white'>
                     <Navbar/>
                 </div>
-                <div className='max-w-[1140px] lg:px-3 pb-10 px-4 mx-auto w-full text-white pt-24'>
+                <div className='max-w-[1140px] lg:px-3 px-4 mx-auto w-full text-white pt-24'>
                     <div className='flex flex-wrap '>
                         <div className="lg:w-6/12 w-full flex flex-col max-lg:justify-center max-lg:items-center max-lg:mb-20">
                             <h1 className='mb-4 xl:text-[64px] lg:text-5xl text-4xl max-lg:text-center xl:max-w-[612px] lg:max-w-96 !leading-[120%] text-white'>Easily Compare <span className='font-bold'>Energy, Gas, And Internet</span>  Plans</h1>
