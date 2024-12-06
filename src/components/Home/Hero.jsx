@@ -21,7 +21,7 @@ const Hero = () => {
                         </div>
                         <div className="lg:w-6/12 w-full flex justify-center max-lg:items-center">
                         <div className='relative'>
-                            <img className='pointer-events-none lg:max-w-[112px] max-w-20 absolute xl:-top-10 xl:left-48 lg:-top-9 lg:left-36 sm:-right-6 -top-6 right-0' src={dotImg} alt="dots-img" />
+                            <img className='pointer-events-none lg:max-w-[190px] max-w-20 absolute xl:-top-[52px] xl:left-36 lg:-top-9 lg:left-36 sm:-right-6 -top-6 right-0' src={dotImg} alt="dots-img" />
                             <img className='xl:max-w-[558px] lg:max-w-md max-w-sm max-lg:w-full max-lg:relative lg:absolute top-0 xl:-left-72 lg:-left-56' src={heroImg} alt="hero-sec-bg" /></div>
                         </div>
                     </div>
