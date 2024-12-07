@@ -1,5 +1,5 @@
 import React from 'react'
-import uprightArrowTwo from './../assets/image/png/upright-arrow-two.png'
+import uprightArrowTwo from './../assets/image/webp/upright-arrow-two.webp'
 
 const Input = () => {
   return (

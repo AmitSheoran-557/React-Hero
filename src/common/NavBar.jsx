@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import CustomButton from "./CustomButton";
-import pageLogo from './../assets/image/png/page-logo.png'
-import { NAVBAR_LIST } from '../utils/Helper'
+import pageLogo from './../assets/image/webp/page-logo.webp'
+import { NAVBAR_LIST } from "./../utils/Helper";
 
+// import Helper from './utils/helper'; 
 
 
 function Navbar() {
