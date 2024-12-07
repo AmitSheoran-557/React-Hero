@@ -13,7 +13,7 @@ function Navbar() {
             <img className="max-w-[105px] w-full max-h-10" src={pageLogo} alt="page-logo" />
             <div className="hidden lg:flex gap-6 items-center">
                 {NAVBAR_LIST.map((obj, i) => (
-                    <a className="text-white text-base font-normal" href="#" key={i}>
+                    <a className="text-white hover:underline underline-offset-2 hover:text-orange-600 duration-300 ease-linear text-base font-normal" href="#" key={i}>
                         {obj.list}
                     </a>
                 ))}

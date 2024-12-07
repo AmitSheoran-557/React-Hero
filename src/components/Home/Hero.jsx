@@ -8,7 +8,7 @@ import Navbar from '../../common/NavBar'
 const Hero = () => {
     return (
         <div>
-            <div className='flex flex-col justify-center items-center bg-cover bg-center lg:pb-[202px] pb-10'  style={{ backgroundImage: `url(${heroBg})` }}>
+            <div className='flex flex-col justify-center items-center bg-cover bg-center lg:pb-[202px] pb-10' style={{ backgroundImage: `url(${heroBg})` }}>
                 <div className='max-w-[1140px] mx-auto w-full text-white'>
                     <Navbar/>
                 </div>
