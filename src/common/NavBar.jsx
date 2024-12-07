@@ -3,18 +3,15 @@ import CustomButton from "./CustomButton";
 import pageLogo from './../assets/image/webp/page-logo.webp'
 import { NAVBAR_LIST } from "./../utils/Helper";
 
-// import Helper from './utils/helper'; 
-
-
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="py-5 flex justify-between items-center px-4 relative z-50">
-            <img className="max-w-[105px] w-full max-h-10" src={pageLogo} alt="page-logo" />
+        <nav className="lg:py-5 pt-4 flex justify-between items-center px-4 relative z-50">
+            <a href="/"><img className="max-w-[105px] w-full max-h-10" src={pageLogo} alt="page-logo" /></a>
             <div className="hidden lg:flex gap-6 items-center">
                 {NAVBAR_LIST.map((obj, i) => (
-                    <a className="text-white hover:underline underline-offset-2 hover:text-orange-600 duration-300 ease-linear text-base font-normal" href="#" key={i}>
+                    <a className="text-white opacity-[90%] hover:underline underline-offset-2 hover:scale-[1.04] duration-300 ease-linear text-base font-normal" href="#" key={i}>
                         {obj.list}
                     </a>
                 ))}
@@ -35,7 +32,7 @@ function Navbar() {
                     </button>
                     {NAVBAR_LIST.map((obj, i) => (
                         <a
-                            className="text-white text-base font-normal mb-4"
+                            className="text-white opacity-[90%] text-base font-normal mb-4"
                             href="#"
                             key={i}
                             onClick={() => setIsOpen(false)}>
