@@ -2,8 +2,8 @@ import React from 'react'
 
 const LogoList = () => {
   return (
-    <div className='max-w-[1140px] lg:pt-[50px] pt-12 mx-auto  max-xl:px-4'>
-      <h3 className='text-blue lg:text-[38px] text-3xl max-lg:text-center max-lg:mx-auto xl:max-w-[548px] lg:max-w-lg xl:mb-[67px] lg:mb-10 mb-7 leading-[110%]'>More Than <span className='text-skyBlue'>80,000</span>+ Companies Trust Bill Central </h3>
+    <div className='max-w-[1140px] lg:pt-[57px] pt-12 mx-auto  max-xl:px-4'>
+      <h3 className='text-blue lg:text-[38px] text-3xl max-lg:text-center max-lg:mx-auto xl:max-w-[548px] lg:max-w-lg xl:mb-[64px] lg:mb-10 mb-7 leading-[110%]'>More Than <span className='text-skyBlue'>80,000</span>+ Companies Trust Bill Central </h3>
       <div className='flex flex-wrap xl:gap-[51px] lg:gap-11 gap-8 justify-center'>
         <img className='lg:max-w-[126px] max-w-24 max-h-[62px]' src="./assets/image/png/energy-logo.png" alt="logo-1" />
         <img className='lg:max-w-[126px] max-w-24 max-h-[62px]' src="./assets/image/png/blue-nrg-logo.png" alt="logo-2" />

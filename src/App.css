@@ -23,3 +23,12 @@
   opacity: 0;
   transition: all 300ms linear;
 }
+.slick-arrow{
+  display: none !important;
+}
+@media (max-width : 575.98px){
+  .slick-list {
+    max-height: 575px !important;
+  }
+}
+  
