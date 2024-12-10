@@ -1,15 +1,12 @@
 import React from 'react'
 import Input from '../../common/Input'
-import dotImg from './../../assets/image/webp/dots-img.webp'
-import heroImg from './../../assets/image/webp/hero-sec-img.webp'
-import heroBg from './../../assets/image/webp/hero-sec-bg.webp'
-import Navbar from '../../common/NavBar'
+import Header from '../../common/Header'
 
 const Hero = () => {
     return (
-        <div className='flex flex-col justify-center items-center bg-cover bg-center lg:pb-[202px] pb-12  ' style={{ backgroundImage: `url(${heroBg})` }}>
+        <div className='flex flex-col justify-center items-center bg-cover bg-center lg:pb-[202px] pb-12 bg-hero-bg'>
             <div className='max-w-[1140px] mx-auto w-full text-white'>
-                <Navbar />
+                <Header />
             </div>
             <div className='max-w-[1140px] lg:px-4 px-4 mx-auto w-full text-white xl:pt-24 lg:pt-20 md:pt-16 pt-12'>
                 <div className='flex flex-wrap '>
@@ -20,8 +17,8 @@ const Hero = () => {
                     </div>
                     <div className="lg:w-6/12 w-full flex justify-center max-lg:items-center">
                         <div className='relative'>
-                            <img className='pointer-events-none xl:max-w-[190px] lg:max-w-24 max-w-20 absolute xl:-top-[52px] xl:left-[180px] lg:-top-9 lg:left-[150px] sm:-right-6 -top-6 right-0' src={dotImg} alt="dots-img" />
-                            <img className='xl:max-w-[558px] lg:max-w-md max-w-sm max-lg:w-full max-lg:relative lg:absolute xl:mt-1 top-0 xl:-left-[250px] lg:-left-56' src={heroImg} alt="hero-sec-bg" /></div>
+                            <img className='pointer-events-none xl:max-w-[190px] lg:max-w-24 max-w-20 absolute xl:-top-[52px] xl:left-[180px] lg:-top-9 lg:left-[150px] sm:-right-6 -top-6 right-0' src="./assets/image/webp/dots-img.webp" alt="dots-img" />
+                            <img className='xl:max-w-[558px] lg:max-w-md max-w-sm max-lg:w-full max-lg:relative lg:absolute xl:mt-1 top-0 xl:-left-[250px] lg:-left-56' src="./assets/image/webp/hero-sec-img.webp" alt="hero-sec-bg" /></div>
                     </div>
                 </div>
             </div>
