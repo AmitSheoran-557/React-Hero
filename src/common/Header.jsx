@@ -2,9 +2,14 @@ import React, { useState, useEffect } from "react";
 import CustomButton from "./CustomButton";
 import { NAVBAR_LIST } from "./../utils/Helper";
 // import uprightImg from './../assets/image/svg/upright-arrow.svg'
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate
+  const toggleNavigate = (link) => {
+      navigate(link)
+  }
 
   useEffect(() => {
     if (isOpen) {
@@ -31,9 +36,8 @@ function Header() {
         {NAVBAR_LIST.map((obj, i) => (
           <a
             className="text-white opacity-[90%] hover:underline underline-offset-2 hover:scale-[1.04] duration-300 ease-linear text-base font-normal"
-            href={obj.link}
-            key={i}
-          >
+           onClick={() => toggleNavigate(obj.id)} href={obj.link}
+            key={i}>
             {obj.tittle}
           </a>
         ))}
@@ -43,16 +47,14 @@ function Header() {
       </div>
       <button
         className="lg:hidden flex items-center justify-center w-10 h-10 text-4xl text-white rounded"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+        onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? "✖" : "☰"}
       </button>
       {isOpen && (
         <div className="fixed top-0 right-0 h-screen w-full bg-blue text-white p-6 flex flex-col items-center justify-center shadow-lg transition-transform ease-linear duration-300 transform z-50">
           <button
             className="self-end absolute top-4 text-4xl"
-            onClick={() => setIsOpen(false)}
-          >
+            onClick={() => setIsOpen(false)}>
             ✖
           </button>
           {NAVBAR_LIST.map((obj, i) => (
@@ -60,8 +62,7 @@ function Header() {
               className="text-white hover:underline underline-offset-2 hover:scale-[1.04] duration-300 ease-linear opacity-[90%] text-base font-normal mb-4"
               href={obj.link}
               key={i}
-              onClick={() => setIsOpen(false)}
-            >
+              onClick={() => setIsOpen(false)}>
               {obj.tittle}
             </a>
           ))}
