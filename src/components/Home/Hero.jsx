@@ -13,7 +13,7 @@ const Hero = () => {
                     <div className="lg:w-6/12 w-full flex flex-col max-lg:justify-center max-lg:items-center max-lg:mb-14 max-md:mb-12 xl:pt-[15px]">
                         <h1 className='mb-4 xl:text-[64px] lg:text-5xl text-4xl max-lg:text-center xl:max-w-[612px] lg:max-w-lg !leading-[110%] text-white max-lg:max-w-xl max-md:max-w-lg'>Easily Compare <span className='font-bold'>Energy, Gas, And Internet</span>  Plans</h1>
                         <p className='lg:mb-[42px] mb-7 xl:max-w-[506px] max-w-md lg:text-base text-sm text-white opacity-[90%] !leading-[145%] max-lg:text-center'>Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place.</p>
-                        <Input />
+                        <Input btnTittle="Compare" placeholder="Start typing your address"/>
                     </div>
                     <div className="lg:w-6/12 w-full flex justify-center max-lg:items-center">
                         <div className='relative'>

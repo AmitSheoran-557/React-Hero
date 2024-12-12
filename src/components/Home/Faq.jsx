@@ -3,7 +3,7 @@ import CustomHeading from '../../common/CustomHeading'
 import SubHeading from '../../common/SubHeading'
 
 const Faq = () => {
-  const [activeIndex, setActiveIndex] = useState(0); // Index of the currently open accordion
+  const [activeIndex, setActiveIndex] = useState(0);
   const accordions = [
     { id: 1, title: 'Can I switch providers if I’m currently in a contract?', content: 'Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.' },
     { id: 2, title: 'Will my service be interrupted if I switch providers?', content: 'Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.' },
