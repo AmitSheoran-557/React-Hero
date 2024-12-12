@@ -1,3 +1,79 @@
- .heading{
+@font-face {
+  font-family: "helvetica";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf")
+      format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf")
+      format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf")
+      format("truetype");
+}
+
+* {
+  font-family: "helvetica";
+  scroll-behavior: smooth;
+}
+
+.heading {
   filter: drop-shadow(1px 1px 5px white);
- }
+}
+.overlay {
+  transition: opacity 0.3s ease;
+}
+
+.img-box:hover .overlay {
+  opacity: 0;
+  transition: all 300ms linear;
+}
+
+.utilities-box:hover svg path {
+  fill: white;
+}
+/* ============================== Slider css ======================================= */
+.slick-arrow {
+  display: none !important;
+}
+@media (max-width: 575.98px) {
+  .slick-list {
+    max-height: 575px !important;
+  }
+  .swiper-wrapper {
+    padding-left: 0px !important;
+  }
+}
+
+/* ============================== Swiper css ======================================= */
+.swiper-wrapper {
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+}
+.swiper-pagination-bullet {
+  font-size: 5px !important;
+  border-radius: 100px !important;
+  color: black !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  background-color: black !important;
+  margin-left: 7px !important;
+  cursor: pointer !important;
+}
+.swiper-pagination {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: max-content;
+}
+.custom-prev:hover svg path {
+  fill: white;
+}
+.custom-next:hover svg path {
+  fill: white;
+}
+/* ================================== Accordion css ======================================== */
+.active-accordion svg path {
+  fill: white !important ;
+  transition: all 300ms linear !important;
+}
+.active-accordion  svg rect {
+  fill: #003459;
+}
+ 
