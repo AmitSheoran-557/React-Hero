@@ -5,9 +5,10 @@ import SubHeading from '../../common/SubHeading'
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(0); // Index of the currently open accordion
   const accordions = [
-    { id: 1, title: 'Accordion 1', content: 'This is the content of Accordion 1.' },
-    { id: 2, title: 'Accordion 2', content: 'This is the content of Accordion 2.' },
-    { id: 3, title: 'Accordion 3', content: 'This is the content of Accordion 3.' },
+    { id: 1, title: 'Can I switch providers if I’m currently in a contract?', content: 'Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.' },
+    { id: 2, title: 'Will my service be interrupted if I switch providers?', content: 'Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.' },
+    { id: 3, title: 'How long does it take to switch providers?', content: 'Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.' },
+    { id: 4, title: 'Is there a fee for switching providers?', content: 'Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.' },
   ];
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? -1 : index);
@@ -21,27 +22,18 @@ const Faq = () => {
 
         <div className="max-w-[916px] w-full mx-auto">
           {accordions.map((accordion, index) => (
-            <div key={accordion.id} className={`border border-gray-300 rounded-md mb-7 overflow-hidden transition-all ${activeIndex === index ? 'h-auto' : 'h-[76px]'
-              }`} >
+            <div key={accordion.id} className={`shadow-customTwo group py-[26px] text-deepBlue  px-6 rounded mb-7 overflow-hidden transition-all duration-300 ${activeIndex === index ? ' max-h-full bg-prussianBlue' : 'max-h-[76px]'}`} >
               {/* Accordion Header */}
               <div
-                className="flex items-center justify-between h-[76px] px-[24px] py-[26px] cursor-pointer"
+                className="flex items-center justify-between cursor-pointer"
                 onClick={() => toggleAccordion(index)}>
-                <h3 className="text-lg font-medium">{accordion.title}</h3>
-                <div className="text-xl">
-                  {activeIndex === index ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round"
-                      strokeLinejoin="round" strokeWidth="2" d="M20 12H4" /> </svg>) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round"
-                      strokeWidth="2" d="M12 4v16m8-8H4" /> </svg>)}
+                <h3 className={`xl:text-2xl lg:text-xl text-lg font-medium group !leading-[110%] ${activeIndex === index ? 'text-white' : ''}`}>{accordion.title}</h3>
+                <div className={`min-w-7 min-h-7 border-solid border-[2px] border-deepBlue flex justify-center items-center rounded-full ${activeIndex === index ? '!border-white' : ''}`}>
+                  <div className={`w-3 h-0.5 relative bg-deepBlue after:w-3 after:h-0.5 after:bg-deepBlue after:rotate-90 after:absolute after:left-0 after:top-0 transition-all duration-300 after:transition-all after:duration-300 ${activeIndex === index ? 'after:!rotate-0 after:!bg-white !bg-white' : ''}`}></div>
                 </div>
               </div>
               {/* Accordion Content */}
-              {activeIndex === index && (
-                <div className="px-[24px] py-[26px] text-gray-700">
-                  {accordion.content}
-                </div>
-              )}
+              <p className={`text-white max-w-[702px] !leading-[150%] lg:text-base mt-[14px] text-sm `}>{accordion.content}</p>
             </div>
           ))}
         </div>

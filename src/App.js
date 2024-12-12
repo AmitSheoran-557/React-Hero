@@ -18,7 +18,7 @@ import WhyUs from './components/view/WhyUs';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <Router>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<About />} />
@@ -27,7 +27,7 @@ function App() {
         <Route path='/testimonials' element={<Testimonials/>} />
         <Route path='/whyUs' element={<WhyUs/>} />
       </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 }

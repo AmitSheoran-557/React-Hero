@@ -7,6 +7,7 @@ import SimpleSteps from '../Home/SimpleSteps'
 import SwitchingEnergy from '../Home/SwitchingEnergy'
 import Testimonials from '../Home/Testimonials'
 import Utilities from '../Home/Utilities'
+import Newsletter from '../Home/Newsletter'
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
         <Utilities/>
         <Testimonials/>
         <Faq/>
+        <Newsletter/>
     </>
   )
 }

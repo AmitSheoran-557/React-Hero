@@ -3,7 +3,7 @@ import Why from '../Second/whyus/Why'
 
 const WhyUs = () => {
   return (
-     <Why/>
+    <Why />
   )
 }
 

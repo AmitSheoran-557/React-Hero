@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CustomButton from "./CustomButton";
 import { NAVBAR_LIST } from "./../utils/Helper";
-// import uprightImg from './../assets/image/svg/upright-arrow.svg'
 import { useNavigate } from "react-router-dom";
 
 function Header() {

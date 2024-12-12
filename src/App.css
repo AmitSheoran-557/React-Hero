@@ -69,10 +69,11 @@
   fill: white;
 }
 /* ================================== Accordion css ======================================== */
-.accordion-content:hover .icon svg path {
-  fill: white;
-  transition: all 300ms linear;
+.active-accordion svg path {
+  fill: white !important ;
+  transition: all 300ms linear !important;
 }
-.accordion-content:hover .icon svg rect {
+.active-accordion  svg rect {
   fill: #003459;
 }
+ 

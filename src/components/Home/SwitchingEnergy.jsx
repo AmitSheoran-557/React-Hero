@@ -15,9 +15,9 @@ const SwitchingEnergy = () => {
           <div className='max-lg:flex flex-col items-center'>
             <CustomHeading tittleOne="Switching Energy" tittleTwo="Made Simple" additionalClasses="max-w-[509px] max-lg:text-center" />
             <SubHeading additionalClasses="lg:!mb-[38px] md:mb-7 mb-5 max-lg:text-center max-w-[700px]" tittleOne="Say goodbye to confusing energy plans! We simplify the process by providing clear and competitive electricity and gas recommendations. Whether you're moving or just seeking a better deal, our platform connects you with the best energy providers quickly and easily, helping you save on energy bills." />
-            <h4 className='xl:text-2xl lg:text-xl text-lg text-prussianBlue lg:mb-7 md:mb-6 sm:mb-5 mb-2 !leading-[110%]'>Benefits Of Comparing Energy Plans</h4>
+            <h4 className='xl:text-2xl lg:text-xl text-lg !text-prussianBlue lg:mb-7 md:mb-6 sm:mb-5 mb-2 !leading-[110%]'>Benefits Of Comparing Energy Plans</h4>
             <div className='text-start w-full'>
-              {ENERGY_BENEFITS .map((item, index) => (
+              {ENERGY_BENEFITS.map((item, index) => (
                 <ul key={index} className='text-deepBlue pl-6'>
                   <li className='lg:mb-2 mb-1 lg:text-base text-sm list-disc !leading-[150%]'>{item.tittle}</li>
                 </ul>

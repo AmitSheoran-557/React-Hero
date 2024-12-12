@@ -12,8 +12,8 @@ const Testimonials = () => {
     return (
         <div>
             <div className='max-w-[1160px] mx-auto w-full max-xl:px-4 xl:mt-[162px] lg:mt-28 md:mt-20 sm:mt-14 mt-12 relative'>
-                <CustomHeading tittleOne="Our" tittleTwo="Testimonials" additionalClasses="!font-normal xl:!max-w-[620px] text-center mx-auto xl:!mb-4 !mb-3" additionalClassesTwo="!font-bold" />
-                <SubHeading additionalClasses="!max-w-[490px] text-center mx-auto xl:mb-[58px] lg:mb-12 md:mb-7 mb-5" tittleOne="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum" />
+                <CustomHeading tittleOne="Our" tittleTwo="Testimonials" additionalClasses="!font-normal xl:!max-w-[620px] text-center mx-auto xl:!mb-4 !mb-3 text-deepBlue opacity-[90%]" additionalClassesTwo="!font-bold" />
+                <SubHeading additionalClasses="!max-w-[490px] text-center mx-auto xl:mb-11 lg:mb-9 md:mb-7 mb-5 text-deepBlue opacity-[90%]" tittleOne="Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum" />
                 <div className="max-w-[1160px] mx-auto relative">
                     <Swiper
                         modules={[Navigation, Pagination]}
@@ -47,7 +47,7 @@ const Testimonials = () => {
                         }}>
                         {TESTIMONIALS.map((item, index) => (
                             <SwiperSlide key={index} className="max-w-[364px] h-[256px]">
-                                <div className="border shadow-customOne border-darkTeal border-opacity-[10%] rounded-lg p-4 flex flex-col justify-between h-full text-center">
+                                <div className="border shadow-customOne border-darkTeal border-opacity-[10%] rounded-lg p-5 flex flex-col justify-between h-full text-center">
                                     <div className='flex gap-2 lg:mb-6 mb-4'>
                                         <img src={item.profileImg} className="lg:w-[60px] w-12 rounded-full" />
                                         <div className="text-start">
@@ -55,14 +55,14 @@ const Testimonials = () => {
                                             <a className='text-black opacity-[50%] !leading-[150%]' href="/">{item.id}</a>
                                         </div>
                                     </div>
-                                    <img className='max-w-[99px]' src={item.rating} alt="rating" />
-                                    <p className="lg:text-base text-start text-sm text-gray-600 mt-2 max-w-xs !leading-[150%]">{item.paragraph}</p>
+                                    <img className='max-w-[99px]' src={item.rating} alt={item.rating} />
+                                    <p className="lg:text-base text-start text-sm text-gray-600 xl:mt-[17px] lg:mt-4 mt-3 max-w-xs !leading-[150%]">{item.paragraph}</p>
                                 </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className="custom-prev max-w-max absolute top-28 xl:block max-xl:hidden duration-300 ease-linear hover:bg-deepBlue -left-20 cursor-pointer border p-2 rounded-full"><PREV_ARROW /></div>
-                    <div className="custom-next max-w-max absolute top-28 xl:block max-xl:hidden duration-300 ease-linear hover:bg-deepBlue -right-20 cursor-pointer border p-2 rounded-full"><NEXT_ARROW /></div>
+                    <div className="custom-prev max-w-max absolute top-[124px] xl:block max-xl:hidden duration-300 ease-linear hover:bg-deepBlue -left-20 cursor-pointer border p-2 rounded-full"><PREV_ARROW /></div>
+                    <div className="custom-next max-w-max absolute top-[124px] xl:block max-xl:hidden duration-300 ease-linear hover:bg-deepBlue -right-20 cursor-pointer border p-2 rounded-full"><NEXT_ARROW /></div>
                 </div>
             </div>
         </div>

@@ -1,17 +1,17 @@
 import React from 'react'
-import { RIGHT_ARROW, UTILITIES_ICON_ONE } from '../../utils/Icons'
+import { RIGHT_ARROW, UTILITIES_ICON_ONE,   } from '../../utils/Icons'
 import CustomHeading from '../../common/CustomHeading'
 import SubHeading from '../../common/SubHeading'
 import { UTILITIES } from '../../utils/Helper'
 
 const utilities = () => {
   return (
-    <div className='max-w-[1140px] mx-auto px-4 w-full xl:mt-[162px] lg:mt-28 md:mt-20 sm:mt-14 mt-12'>
+    <div className='max-w-[1140px] mx-auto px-4 w-full xl:mt-[132px] lg:mt-28 md:mt-20 sm:mt-14 mt-12'>
       <CustomHeading tittleOne="Why Choose Us for" tittleTwo="Utilities" additionalClasses="!font-normal xl:!max-w-[620px] text-center mx-auto xl:!mb-4 !mb-3" additionalClassesTwo="!font-bold" />
       <SubHeading additionalClasses="!max-w-[620px] text-center mx-auto xl:mb-[58px] lg:mb-12 md:mb-7 mb-5" tittleOne="This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!" />
       <div className="flex flex-wrap xl:min-h-[596px] justify-center mx-auto w-full">
         <div className="xl:w-4/12 flex justify-center items-center mx-auto">
-          <div className='bg-prussianBlue p-10 max-w-[424px] h-full rounded'>
+          <div className='bg-prussianBlue p-10 xl:min-w-[424px] max-w-[424px] w-full h-full rounded'>
             <div className='flex flex-col'>
               <div className="xl:mb-[51px] lg:mb-10 mb-8"><UTILITIES_ICON_ONE /></div>
               <h3 className='lg:mb-3 mb-2 text-white'>Tailored Recommendations</h3>
@@ -20,7 +20,7 @@ const utilities = () => {
             </div>
           </div>
         </div>
-        <div className="xl:w-8/12 max-xl:mt-10 flex flex-wrap justify-center gap-6 xl:pl-6">
+        <div className="xl:w-8/12 max-xl:mt-10 flex flex-wrap justify-center gap-6 xl:pl-[46px]">
           {UTILITIES.map((obj, index) => (
             <div key={index}>
               <div className="w-full">
